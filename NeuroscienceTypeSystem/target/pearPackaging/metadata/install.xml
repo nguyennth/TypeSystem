@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COMPONENT_INSTALLATION_DESCRIPTOR>
+	<OS>
+		<NAME>Windows 7</NAME>
+	</OS>
+	<TOOLKITS>
+		<JDK_VERSION>1.8.0_151</JDK_VERSION>
+	</TOOLKITS>
+	<UIMA_FRAMEWORK>
+	</UIMA_FRAMEWORK>
+	<SUBMITTED_COMPONENT>
+		<ID>uk.ac.nactem.uima.NeuroscienceTypeSystem</ID>
+		<NAME></NAME>
+		<DESC>$main_root/desc/uk/ac/nactem/uima/NeuroscienceTypeSystem.xml</DESC>
+		<DEPLOYMENT>standard</DEPLOYMENT>
+	</SUBMITTED_COMPONENT>
+	<INSTALLATION>
+		<PROCESS>
+			<ACTION>set_env_variable</ACTION>
+			<PARAMETERS>
+				<COMMENTS>component classpath setting</COMMENTS>
+				<VAR_VALUE>$main_root/lib/NeuroscienceTypeSystem-0.0.1-SNAPSHOT.jar</VAR_VALUE>
+				<VAR_NAME>classpath</VAR_NAME>
+			</PARAMETERS>
+		</PROCESS>
+		<PROCESS>
+			<ACTION>set_env_variable</ACTION>
+			<PARAMETERS>
+				<COMMENTS>component uima.datapath setting</COMMENTS>
+				<VAR_VALUE>$main_root/resources</VAR_VALUE>
+				<VAR_NAME>uima.datapath</VAR_NAME>
+			</PARAMETERS>
+		</PROCESS>
+	</INSTALLATION>
+</COMPONENT_INSTALLATION_DESCRIPTOR>
